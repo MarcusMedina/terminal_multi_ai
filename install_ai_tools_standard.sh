@@ -1,7 +1,11 @@
 #!/bin/bash
 # ==============================================================================
-#  AI Tools Installer Script (Standard Version - 2.3)
-#  - Adds `clear` to all AI functions for a clean start.
+#  terminal_multi_ai Installer Script
+#  Project by: Marcus Medina (https://github.com/MarcusMedina)
+#  GitHub Repo: https://github.com/MarcusMedina/terminal_multi_ai
+# ==============================================================================
+#  This is the STANDARD version for home/unrestricted networks.
+#  If you are behind a corporate firewall, use the 'corporate' version.
 # ==============================================================================
 
 # Function to display messages
@@ -32,7 +36,7 @@ if [ -f ~/py3.12-venv/bin/activate ]; then
     deactivate
     success "Python SDKs installed in ~/py3.12-venv."
 else
-    echo "⚠️  Warning: Python venv not found. Skipping SDK installation."
+    echo "⚠️  Warning: Python vεν not found. Skipping SDK installation."
 fi
 
 info "[4/4] Configuring Gemini Python CLI..."
