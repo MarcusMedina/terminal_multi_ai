@@ -2,6 +2,8 @@
 
 *A conceptual image of the developer-AI collaboration that created this project.*
 
+The whole idea was to install Claude, Codex and Gemini on my machine, at first I used Docker but realised WSl would be more efficient so I changed my scripts to that. With some help of the AIs I got a nice script and decided to share it. Here it is.
+
 ## 🚀 What is This?
 
 **Terminal\_multi\_ai** is a comprehensive toolkit and guide for supercharging your terminal with a suite of powerful AI assistants: **Google's Gemini**, **Anthropic's Claude**, and **OpenAI's Codex**.
