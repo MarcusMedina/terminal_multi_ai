@@ -1,8 +1,12 @@
 #!/bin/bash
 # ==============================================================================
-#  AI Tools Installer (Corporate v2.4 - Fully Synced)
-#  - Now includes all aliases, functions, and manifest generation from the
-#    standard script, plus all necessary firewall workarounds.
+#  terminal_multi_ai Installer Script
+#  Project by: Marcus Medina (https://github.com/MarcusMedina)
+#  GitHub Repo: https://github.com/MarcusMedina/terminal_multi_ai
+# ==============================================================================
+#  This is the CORPORATE FIREWALL version.
+#  It includes all features of the standard script, plus advanced workarounds
+#  for proxies and SSL inspection.
 # ==============================================================================
 
 # Function to display messages
