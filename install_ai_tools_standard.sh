@@ -78,7 +78,7 @@ fi
 
 # Add the new, updated block to the end of the file.
 info "  -> Writing latest configuration to ~/.bashrc..."
-cat << EOF >> "$BASHRC_FILE"
+cat << 'EOF' >> "$BASHRC_FILE"
 
 $START_MARKER
 # Configuration for AI Tools & Workflow (managed by script)
@@ -91,21 +91,21 @@ $START_MARKER
 function claude() {
     clear
     pushd ~/claude > /dev/null || return
-    command claude "\$@"
+    command claude "$@"
     popd > /dev/null
 }
 
 function codex() {
     clear
     pushd ~/codex > /dev/null || return
-    command codex "\$@"
+    command codex "$@"
     popd > /dev/null
 }
 
 function gemini() {
     clear
     pushd ~/gemini > /dev/null || return
-    ~/py3.12-venv/bin/python3 ~/gemini/gemini.py "\$@" 2>/dev/null
+    ~/py3.12-venv/bin/python3 ~/gemini/gemini.py "$@" 2>/dev/null
     popd > /dev/null
 }
 
@@ -118,8 +118,8 @@ alias ~='cd ~'
 alias home='cd ~'
 alias desk='cd ~/Desktop'
 alias docs='cd ~/Documents'
-alias dls='cd /mnt/c/Users/\$USER/Downloads'
-alias winhome='cd /mnt/c/Users/\$USER'
+alias dls='cd /mnt/c/Users/$USER/Downloads'
+alias winhome='cd /mnt/c/Users/$USER'
 
 # ---------------------------
 # 📋 Listing & Searching
@@ -128,7 +128,7 @@ alias ll='ls -alF --color=auto'
 alias la='ls -A'
 alias l='ls -CF'
 alias grep='grep --color=auto'
-alias path='echo -e \${PATH//:/\\n}'
+alias path='echo -e ${PATH//:/\\n}'
 
 # ---------------------------
 # ⚙️ System
@@ -158,14 +158,14 @@ alias pipu='pip install --upgrade pip'
 # ---------------------------
 # 💻 Windows Dev Dirs
 # ---------------------------
-alias vsc='cd "/mnt/c/Users/\$USER/source/Repos/"'
-alias idea='cd "/mnt/c/Users/\$USER/IdeaProjects/"'
+alias vsc='cd "/mnt/c/Users/$USER/source/Repos/"'
+alias idea='cd "/mnt/c/Users/$USER/IdeaProjects/"'
 alias mygit='cd /mnt/c/Git'
 
 # ---------------------------
 # 🪄 Custom Functions
 # ---------------------------
-mkcd () { mkdir -p "\$1" && cd "\$1"; }
+mkcd () { mkdir -p "$1" && cd "$1"; }
 alias duck='~/duck_events.sh'
 
 # ---------------------------
